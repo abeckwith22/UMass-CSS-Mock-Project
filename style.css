@@ -1,0 +1,94 @@
+.buttons {
+  background-color: hsl(210,100%,50%);
+  width:100px;
+  height:50px;
+  color: white;
+  border-radius:5px;
+  border-style:solid;
+  outline:1px;
+}
+
+.buttons:hover {
+  background-color: hsl(210, 100%, 40%);
+}
+
+.buttons:focus {
+  outline:none;
+}
+
+.card.images{
+  border: 1px black;
+  border-radius:10px 10px 0px 0px;
+  width:700px;
+}
+
+.card {
+  overflow:hidden;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px grey;
+  border-radius: 10px;
+  background-color: hsl(30,100%,90%);
+  width:700px;
+}
+
+.card.description {
+  padding: 10px;
+}
+
+.card.title{
+  padding:20px;
+}
+
+/* Exercise 3 */
+.gifCards{
+  width:500px;
+  height:500px;
+  background-color: red;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tile {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  border: 8px solid red;
+  background-color:red;
+}
+
+.img-1{
+  background-image: url(images/gnome.gif);
+}
+
+.img-wrapper{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.caption{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 300px;
+  transition: top 0.6s;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.tile:hover .caption {
+  top: 0;
+}
